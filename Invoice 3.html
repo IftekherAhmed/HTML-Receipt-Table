@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Invoice Demo</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        caption {
+            text-align: center;
+            background-color: #fcfcfc;
+            padding: 10px;
+        }
+
+        caption img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .invoice, .barcode {
+            text-align: center;
+        }
+
+        .address {
+            width: 50%;
+            text-align: left;
+        }
+
+        .customer {
+            width: 50%;
+            text-align: left;
+        }
+
+        .subtotal, .tax, .grand-total {
+            text-align: right;
+        }
+
+        .footer {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>
+            <img src="https://www.กล่องพลาสติก.com/wp-content/uploads/2023/09/logo.png" alt="">
+            <br>
+            <span>Your Company Name</span>
+            <br>
+            <small>+8801946522456</small>
+        </caption>
+        <thead>
+            <tr>
+                <th colspan="4" class="invoice">Invoice</th>
+            </tr>
+            <tr>
+                <td colspan="3" class="address">
+                    Pay to:<br>
+                    Acme Billing Co.<br>
+                    123 Main St.<br>
+                    Cityville, NA 12345
+                </td>
+                <td class="customer">
+                    Customer:<br>
+                    John Smith<br>
+                    321 Willow Way<br>
+                    Southeast Northwestershire, MA 54321
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="address">
+                    Order Date: 14 January 2025
+                </td>
+                <td class="customer">
+                    Possible Delivery Date: 14 January 2025
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Name / Description</th>
+                <th>Qty.</th>
+                <th>Price</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>Paperclips</td>
+                <td>1000</td>
+                <td>0.01</td>
+                <td>10.00</td>
+            </tr>
+            <tr>
+                <td>Staples (box)</td>
+                <td>100</td>
+                <td>1.00</td>
+                <td>100.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3" class="subtotal">Subtotal</th>
+                <td>110.00</td>
+            </tr>
+            <tr>
+                <th colspan="3" class="tax">Tax (8%)</th>
+                <td>8.80</td>
+            </tr>
+            <tr>
+                <th colspan="3" class="grand-total">Grand Total</th>
+                <td>$ 118.80</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="barcode">
+                    <img src="https://user-images.githubusercontent.com/11581433/141865094-958ae645-d97a-480b-be9a-7d85f642b327.png" width="300" alt="barcode">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="footer">
+                    <strong>Thanks for being with us!</strong>
+                    <br>
+                    <span>Your additional information here.</span>
+                    <br>
+                    <small>+8801946522456</small>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
