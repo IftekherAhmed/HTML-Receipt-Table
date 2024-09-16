@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Invoice for your purchase from Swapno Food Industry. Thank you for trusting us!">
+    <title>Invoice - Swapno Food Industry</title>
+
+    <style>
+        body * {
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            vertical-align: baseline;
+        }
+
+        .product-table table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .product-table th,
+        .product-table td {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding: 0 10px;
+        }
+
+        .product-table thead {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .product-table tbody {
+            border-bottom: 1px solid black;
+        }
+
+        .border-top {
+            border-top: 1px solid black;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid black;
+        }
+
+        .border-left {
+            border-left: 1px solid black;
+        }
+
+        .border-right {
+            border-right: 1px solid black;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        @media only screen and (max-width: 600px) {
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Table -->
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <!-- Company Information -->
+                    <div class="text-center">
+                        <img src="https://retailsolution.com.bd/wp-content/uploads/2022/06/Retail-Solution-POS.png.webp"
+                            width="200" alt="">
+                        <h3>Swapno Food Industry</h3>
+                        <p>
+                            Email: khaniftekherahmed@gmail.com, &nbsp;
+                            Phone: +8801910117659
+                        </p>
+                        <p>
+                            North zone Block-C,Plot no-7, Road no-282,
+                            <br>
+                            Howsing Estate khalishpur,khulna.
+                        </p>
+                    </div>
+                    <!--/ Company Information -->
+
+                    <!-- Double Border -->
+                    <span class="border-top" style="display: block; margin: 5px 0 2px 0;"></span>
+                    <span class="border-top" style="display: block;"></span><br>
+                    <!--/ Double Border -->
+                </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <!-- Customer & Invoice -->
+                    <table border="0">
+                        <tr>
+                            <td>
+                                <b>Customer Details</b>
+                                <p>Khan Iftekher Ahmed</p>
+                                <p>Email: khaniftekherahmed@gmail.com</p>
+                                <p>Phone: +8801910117659</p>
+                                <p>North Zone Block C-7, Road No: 282, khalishpur, khulna</p>
+                            </td>
+
+                            <td>
+                                <b>Invoice: 23316092412</b>
+                                <p>Date: 16 September 2024</p>
+                                <p>Status: Confirmed</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--/ Customer & Invoice -->
+                    <br><!-- Product Table -->
+                    <div class="product-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="text-center" width="50">#</th>
+                                    <th class="text-left">Product</th>
+                                    <th class="text-right" width="100">CPU ($)</th>
+                                    <th class="text-right" width="100">Qty</th>
+                                    <th class="text-right" width="100">Discount ($)</th>
+                                    <th class="text-right" width="100">Amount ($)</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td class="text-left">Product 1</td>
+                                    <td class="text-right">$10</td>
+                                    <td class="text-right">1Pc</td>
+                                    <td class="text-right">$0</td>
+                                    <td class="text-right">$10</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td class="text-left">Product 2</td>
+                                    <td class="text-right">$15</td>
+                                    <td class="text-right">2Pc</td>
+                                    <td class="text-right">$5</td>
+                                    <td class="text-right">$25</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">3</td>
+                                    <td class="text-left">Product 3</td>
+                                    <td class="text-right">$20</td>
+                                    <td class="text-right">1Pc</td>
+                                    <td class="text-right">$2</td>
+                                    <td class="text-right">$18</td>
+                                </tr>
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <td class="text-right" colspan="5">Subtotal</td>
+                                    <td class="text-right">$330</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right" colspan="5">Additional Charge</td>
+                                    <td class="text-right">$0</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right" colspan="5">Shipping Charge</td>
+                                    <td class="text-right">$30</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right" colspan="5">Discount</td>
+                                    <td class="text-right">$20</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right" colspan="5"><strong>Total</strong></td>
+                                    <td class="text-right"><strong>$340</strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right" colspan="5">Paid</td>
+                                    <td class="text-right">$20</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right" colspan="5">Payment Method</td>
+                                    <td class="text-right">Cash</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right" colspan="5">Due</td>
+                                    <td class="text-right">$20</td>
+                                </tr>
+                                <tr class="border-top">
+                                    <td colspan="6">In Word: Three Hundred Forty Only</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!--/ Product Table -->
+                    <br>
+
+                    <!-- Note & Terms Condition -->
+                    <table border="0">
+                        <tr>
+                            <td><!-- Note -->
+                                <p>
+                                    <b>Note:</b> Lorem ipsum dolor sit amet consectetur adipiscing, elit placerat
+                                    pharetra class.
+                                </p>
+                                <!--/ Note -->
+                                <br>
+
+                                <!-- Terms & Condition -->
+                                <div>
+                                    <b>Terms & Condition:</b>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit placerat pharetra class.
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit placerat pharetra class.
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit placerat pharetra class.
+                                    </p>
+                                </div>
+                                <!--/ Terms & Condition -->
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <!--/ Note & Terms Condition -->
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>
+                    <!-- Double Border -->
+                    <span class="border-top" style="display: block; margin: 5px 0 2px 0;"></span>
+                    <span class="border-top" style="display: block; margin-bottom: 3px;"></span>
+                    <!--/ Double Border -->
+                    <div class="text-center">
+                        <p>Thanks For Trusting Us!</p>
+                        <p>Email: khaniftekherahmed@gmail.com, Phone: +8801910117659</p>
+                        <p>North Zone Block C-7, Road No: 282, khalishpur, khulna</p>
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--/ Main Table -->
+</body>
+
+</html>
